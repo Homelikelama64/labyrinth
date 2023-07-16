@@ -6,6 +6,7 @@ scoreboard players set CHUNKY LABYRINTH 1
 scoreboard players set CELLXPOS LABYRINTH 0
 scoreboard players set CELLYPOS LABYRINTH 1
 scoreboard players set OFFSET LABYRINTH 0
+scoreboard players set CELLOFFSET LABYRINTH 0
 
 
 scoreboard players operation CUNKSPACING LABYRINTH = CHUNKSIZEX LABYRINTH
