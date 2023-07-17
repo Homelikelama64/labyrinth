@@ -5,11 +5,11 @@ tellraw @a "loop"
 execute as @e[type=armor_stand,tag=Cell,tag=Using] at @s run function labyrinth:walls
 
 
-execute store result storage jankteleport xaxis double 0.01 run data get entity @e[tag=BEGIN,limit=1] Pos[0] 100
+execute store result storage jankteleport xaxis double 0.01 run data get entity @e[type=armor_stand,tag=Cell,tag=Using,limit=1] Pos[0] 100
 execute store result score Xjankteleport LABYRINTH run data get storage minecraft:jankteleport xaxis
 scoreboard players operation Xjankteleport LABYRINTH += WALLSPACING LABYRINTH
 execute store result storage jankteleport xaxis double 1 run scoreboard players get Xjankteleport LABYRINTH
-data modify entity @e[tag=BEGIN,limit=1] Pos[0] set from storage jankteleport xaxis
+data modify entity @e[type=armor_stand,tag=Cell,tag=Using,limit=1] Pos[0] set from storage jankteleport xaxis
 
 
 execute as @e[type=armor_stand,tag=Cell,tag=Using] at @s run function labyrinth:walls
