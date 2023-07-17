@@ -12,7 +12,6 @@ execute store result storage jankteleport xaxis double 1 run scoreboard players 
 data modify entity @e[type=armor_stand,tag=Cell,tag=Using,limit=1] Pos[0] set from storage jankteleport xaxis
 
 
-execute as @e[type=armor_stand,tag=Cell,tag=Using] at @s run function labyrinth:walls
 
 tag @e[type=armor_stand,tag=Cell,tag=Using] add loop
 tag @e[type=armor_stand,tag=Cell,tag=Using,tag=loop] remove Using
