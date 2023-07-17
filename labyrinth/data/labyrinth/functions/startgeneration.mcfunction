@@ -13,6 +13,17 @@ scoreboard players operation CUNKSPACING LABYRINTH = CHUNKSIZEX LABYRINTH
 scoreboard players operation CUNKSPACING LABYRINTH *= WALLSPACING LABYRINTH
 scoreboard players operation CUNKSPACING LABYRINTH += WALLSPACING LABYRINTH
 
+scoreboard players operation CUNKSPACINGY LABYRINTH = CHUNKSIZEY LABYRINTH
+scoreboard players operation CUNKSPACINGY LABYRINTH *= WALLSPACING LABYRINTH
+scoreboard players operation CUNKSPACINGY LABYRINTH += WALLSPACING LABYRINTH
+
+scoreboard players operation CunkSize LABYRINTH = CHUNKSIZEX LABYRINTH
+scoreboard players operation CunkSize LABYRINTH *= WALLSPACING LABYRINTH
+
+scoreboard players operation CHUNKSIZEY-MOD LABYRINTH = CHUNKSIZEY LABYRINTH
+scoreboard players operation CHUNKSIZEY-MOD LABYRINTH *= #2 LABYRINTH
+scoreboard players operation CHUNKSIZEY-MOD LABYRINTH += #2 LABYRINTH
+
 scoreboard players set #2 LABYRINTH 2
 
 scoreboard players operation OFFSETSIZE LABYRINTH = WALLSPACING LABYRINTH
