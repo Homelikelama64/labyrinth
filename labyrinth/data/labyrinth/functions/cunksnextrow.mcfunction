@@ -1,5 +1,4 @@
-scoreboard players operation MAPSCALE LABYRINTH = CUNKSPACING LABYRINTH
-scoreboard players operation MAPSCALE LABYRINTH *= MAPSIZEX LABYRINTH
+
 
 
 

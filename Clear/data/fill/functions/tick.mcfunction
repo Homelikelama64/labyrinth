@@ -1,8 +1,8 @@
 scoreboard players set Marker Fill 0
 execute as @e[tag=Marker] run scoreboard players add Marker Fill 1 
 execute if score Marker Fill matches 0 run kill @e[tag=Marker]
-execute if score Marker Fill matches 0 run summon armor_stand ~ ~ ~ {NoAI:1,NoGravity:1,Tags:["Marker1","Marker"],Marker:1,Invisible:1}
-execute if score Marker Fill matches 0 run summon armor_stand ~ ~ ~ {NoAI:1,NoGravity:1,Tags:["Marker2","Marker"],Marker:1,Invisible:1}
+execute in labyrinth:labyrinth run execute if score Marker Fill matches 0 run summon armor_stand ~ ~ ~ {NoAI:1,NoGravity:1,Tags:["Marker1","Marker"],Marker:1,Invisible:1}
+execute in labyrinth:labyrinth run execute if score Marker Fill matches 0 run summon armor_stand ~ ~ ~ {NoAI:1,NoGravity:1,Tags:["Marker2","Marker"],Marker:1,Invisible:1}
 
 data modify entity @e[tag=Marker,limit=1,tag=Marker1] Pos[0] set from storage jankfill Point1X
 data modify entity @e[tag=Marker,limit=1,tag=Marker1] Pos[1] set from storage jankfill Point1Y

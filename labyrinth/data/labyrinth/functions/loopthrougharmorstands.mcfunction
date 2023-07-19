@@ -5,6 +5,8 @@ tag @e[type=armor_stand,tag=Cell,tag=!Using,tag=!loop,limit=1] add Using
 execute as @e[type=armor_stand,tag=Cell,tag=Using] at @s run function labyrinthwalls:rootwalls
 execute as @e[type=armor_stand,tag=Cell,tag=Using] at @s run setblock ~ ~1 ~ redstone_block
 
+execute as @e[type=armor_stand,tag=Cell,tag=Using] at @s run fill ~ ~ ~ ~ ~1 ~ air
+
 execute store result storage jankteleport xaxis double 0.01 run data get entity @e[type=armor_stand,tag=Cell,tag=Using,limit=1] Pos[0] 100
 execute store result score Xjankteleport LABYRINTH run data get storage minecraft:jankteleport xaxis
 scoreboard players operation Xjankteleport LABYRINTH += WALLSPACING LABYRINTH

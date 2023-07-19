@@ -14,3 +14,6 @@ execute if score MAPSIZEX LABYRINTH > CHUNKX LABYRINTH run function labyrinth:ch
 
 execute if score MAPSIZEX LABYRINTH = CHUNKX LABYRINTH if score MAPSIZEY LABYRINTH = CHUNKY LABYRINTH run kill @e[tag=BEGIN]
 
+
+
+#execute if score MAPSIZEX LABYRINTH = CHUNKX LABYRINTH if score MAPSIZEY LABYRINTH = CHUNKY LABYRINTH run function labyrinth:clear

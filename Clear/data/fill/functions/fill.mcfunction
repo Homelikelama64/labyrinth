@@ -1,7 +1,7 @@
 kill @e[tag=fill]
-summon armor_stand 0 0 0 {Tags:["Point1","fill"],NoAI:1,NoGravity:1}
-summon armor_stand 0 0 0 {Tags:["Point2","fill"],NoAI:1,NoGravity:1}
-summon armor_stand 0 0 0 {Tags:["Clear","fill"],NoAI:1,NoGravity:1}
+execute in labyrinth:labyrinth run summon armor_stand 0 0 0 {Tags:["Point1","fill"],NoAI:1,NoGravity:1}
+execute in labyrinth:labyrinth run summon armor_stand 0 0 0 {Tags:["Point2","fill"],NoAI:1,NoGravity:1}
+execute in labyrinth:labyrinth run summon armor_stand 0 0 0 {Tags:["Clear","fill"],NoAI:1,NoGravity:1}
 
 execute store result storage jankfill Point1X double 1 run scoreboard players get Point1X-mod Fill
 execute store result storage jankfill Point1Y double 1 run scoreboard players get Point1Y-mod Fill
