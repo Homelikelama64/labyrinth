@@ -1,5 +1,5 @@
 scoreboard players add CHUNKX LABYRINTH 1
-tellraw @a "HI"
+
 
 execute as @e[tag=BEGIN,limit=1] at @s run summon armor_stand ~ ~ ~ {Tags:[Cell],NoAI:1,NoGravity:1,Invulnerable:1}
 

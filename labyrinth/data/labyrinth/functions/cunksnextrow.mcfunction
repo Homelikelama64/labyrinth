@@ -1,7 +1,7 @@
 scoreboard players operation MAPSCALE LABYRINTH = CUNKSPACING LABYRINTH
 scoreboard players operation MAPSCALE LABYRINTH *= MAPSIZEX LABYRINTH
 
-tellraw @a "WHAT"
+
 
 execute store result storage jankteleport xaxis double 0.01 run data get entity @e[tag=BEGIN,limit=1] Pos[0] 100
 execute store result score Xjankteleport LABYRINTH run data get storage minecraft:jankteleport xaxis

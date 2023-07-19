@@ -1,6 +1,5 @@
 tag @e[type=armor_stand,tag=Cell,tag=!Using,tag=!loop,limit=1] add Using
 
-tellraw @a "reset"
 
 
 execute store result storage jankteleport xaxis double 0.01 run data get entity @e[type=armor_stand,tag=Cell,tag=Using,limit=1] Pos[0] 100
@@ -22,6 +21,7 @@ execute if score CELLOFFSETTOGGLE LABYRINTH matches 1 run execute store result s
 execute if score CELLOFFSETTOGGLE LABYRINTH matches 1 run scoreboard players operation Xjankteleport LABYRINTH += OFFSETSIZE LABYRINTH
 execute if score CELLOFFSETTOGGLE LABYRINTH matches 1 run execute store result storage jankteleport xaxis double 1 run scoreboard players get Xjankteleport LABYRINTH
 execute if score CELLOFFSETTOGGLE LABYRINTH matches 1 run data modify entity @e[type=armor_stand,tag=Cell,tag=Using,limit=1] Pos[0] set from storage jankteleport xaxis
+
 
 
 execute store result storage jankteleport Yaxis double 0.01 run data get entity @e[type=armor_stand,tag=Cell,tag=Using,limit=1] Pos[2] 100
