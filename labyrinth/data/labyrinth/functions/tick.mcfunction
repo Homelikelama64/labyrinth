@@ -1,2 +1,3 @@
 execute if score MAPSIZEX LABYRINTH = CHUNKX LABYRINTH if score MAPSIZEY LABYRINTH = CHUNKY LABYRINTH run function labyrinth:cells
 execute if score MAPSIZEX LABYRINTH = CHUNKX LABYRINTH if score MAPSIZEY LABYRINTH = CHUNKY LABYRINTH run scoreboard players set CHUNKX LABYRINTH 0
+

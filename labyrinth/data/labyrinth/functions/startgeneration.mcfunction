@@ -37,6 +37,8 @@ scoreboard players operation MAPSCALE LABYRINTH *= MAPSIZEX LABYRINTH
 scoreboard players operation MAPSCALEY LABYRINTH = CUNKSPACINGY LABYRINTH
 scoreboard players operation MAPSCALEY LABYRINTH *= MAPSIZEY LABYRINTH
 
-execute as @e[tag=BEGIN] at @s run fill ~-6 3 ~-6 ~120 ~10 ~120 air
+execute as @e[tag=BEGIN] at @s run forceload add ~360 ~370
+execute as @e[tag=BEGIN] at @s run fill ~-12 2 ~-9 ~370 ~10 ~370 air
+execute as @e[tag=BEGIN] at @s run fill ~-12 2 ~-9 ~370 ~2 ~370 white_concrete
 
 function labyrinth:chunks
