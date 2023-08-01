@@ -16,4 +16,7 @@ scoreboard players operation terrainsizey LABYRINTH *= MAPSIZEY LABYRINTH
 scoreboard players set #5 LABYRINTH 5
 scoreboard players operation terrainsizey LABYRINTH /= #5 LABYRINTH
 
+scoreboard players operation terrainsizexinblocks LABYRINTH = terrainsizex LABYRINTH
+scoreboard players operation terrainsizexinblocks LABYRINTH *= #5 LABYRINTH
+
 function terrain:cellsrow
