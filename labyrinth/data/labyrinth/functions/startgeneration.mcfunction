@@ -39,6 +39,7 @@ scoreboard players operation MAPSCALEY LABYRINTH *= MAPSIZEY LABYRINTH
 
 execute as @e[tag=BEGIN] at @s run forceload add ~360 ~370
 execute as @e[tag=BEGIN] at @s run fill ~-12 2 ~-9 ~370 ~10 ~370 air
-execute as @e[tag=BEGIN] at @s run fill ~-12 2 ~-9 ~370 ~2 ~370 white_concrete
+kill @e[type=minecraft:item]
+#execute as @e[tag=BEGIN] at @s run fill ~-12 2 ~-9 ~370 ~2 ~370 white_concrete
 
-function labyrinth:chunks
+function terrain:startterrain
